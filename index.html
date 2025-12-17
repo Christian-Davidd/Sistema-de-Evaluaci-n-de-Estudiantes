@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABAJO</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body class="bg-secondary  text-white">
+    <div class="card bg-dark text-light shadow-lg border-0 rounded-4 p-4">
+        <h1 class="text-center fw-bold text-info mb-4">NOTAS DE CURSOS</h1>
+        <hr>
+        <h1 class="text-uppercase text-warning">CURSOS: </h1>
+        <div class="container">
+            <h1> EDO 31478</h1>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <!-- bs5formfloating -->
+                    <div class="form-floating mb-3 ">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="fomrID1"
+                            id="txt_estudiantes_edo"
+                            placeholder=""
+                        />
+                        <label for="txt_estudiantes_edo">Nombre del estudiante</label>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="form-floating mb-3">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_notas_edo"
+                            placeholder=""
+                        />
+                        <label for="txt_notas_edo">Notas: 1-10</label>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="d-grid gap-2">
+                        <button
+                            type="button"
+                            name=""
+                            id="btn_agregar_edo"
+                            class="btn btn-success btn-lg"
+                        >
+                            AGREGAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="mt-4 mb-3 fw-bold text-info border-bottom border-info pb-2">Estudiantes:</h1>
+            <!-- bs5list-flush -->
+            <!-- Some borders are removed -->
+
+            <ul class="list-group list-group-flush mt-3" id="lista_notas_edo">
+            </ul>
+            <h1 class="mt-4 mb-3 fw-bold text-info border-bottom border-info pb-2">Información del curso:</h1>
+
+            <p></p>
+            <div id="txt_estado_estudiantes"></div>
+            <p></p>
+            <div id="txt_curso_promedio"></div>
+            <p></p>
+            <div id="txt_estado_curso"></div>
+        </div>
+
+        <!-- bs5buttonbock -->
+
+    </div>
+
+
+    <script src="./public/js/notas.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
